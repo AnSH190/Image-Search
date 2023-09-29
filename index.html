@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image-Search</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1 class="main">Bing Image Search</h1>
+    <div class="cont">
+      <input
+        type="text"
+        class="field"
+        id="search"
+        placeholder="Enter your search"
+      />
+      <button class="searchBtn" onclick="search()">Search</button>
+    </div>
+    <div class="img-cont">
+      <a href="{img.src}" download>
+        <div class="images" id="results"></div>
+      </a>
+    </div>
+    <!-- <button
+      class="moreBtn"
+      id="more"
+      onclick="showMore()"
+      style="display: none"
+    >
+      
+    </button> -->
+    <div class="more-cont">
+      <button
+        role="button"
+        class="moreBtn button-name"
+        id="more"
+        onclick="showMore()"
+        style="display: none"
+      >
+        See More Results
+      </button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
